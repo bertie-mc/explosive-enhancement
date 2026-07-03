@@ -6,8 +6,10 @@ A NeoForge 1.21.1 reimplementation of the **Explosive Enhancement** explosion-pa
 - **Loader:** NeoForge
 - **Mod ID:** `explosiveenhancement`
 
-Port of **Explosive Enhancement** by Superkat32 (originally a Fabric mod). This is an independent NeoForge reimplementation; the original design belongs to its author.
+## Credits
 
-## License / attribution
+An independent NeoForge port of **[Explosive Enhancement](https://github.com/Superkat32/Explosive-Enhancement)** by **Superkat32** (originally a Fabric mod). The original is MIT-licensed.
 
-> **Licensing pending.** This is an independent NeoForge port/reimplementation of a third-party mod, kept in a **private** repository. It is **not for redistribution** until the original author's licensing terms are confirmed. All original code and assets belong to their respective authors (see attribution above).
+## License
+
+Released under the MIT License — see [LICENSE](LICENSE).
