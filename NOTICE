@@ -1,0 +1,27 @@
+LICENSING
+
+This repository is a NeoForge port of **Explosive Enhancement** by
+**Superkat32**, whose original is MIT-licensed. The MIT License in LICENSE
+applies to this repository as a whole and its copyright notices must be
+preserved in any redistribution.
+
+The port is NOT relicensed away from MIT, because the upstream work is not
+ours to relicense.
+
+CONTRIBUTIONS BY berlord
+
+To the extent that berlord holds copyright in the NeoForge port work in this
+repository — the changes made on top of Superkat32's original — those
+contributions are dedicated to the public domain under The Unlicense
+(https://unlicense.org/). This is a dedication of our own additions only and
+does not affect Superkat32's rights in the original work, which continue to be
+governed by the MIT License in LICENSE.
+
+In practice: treat this repository as MIT. The dedication above only means
+berlord asserts no additional restriction beyond MIT over the port changes.
+
+THIRD-PARTY DEPENDENCIES
+
+Minecraft, NeoForge and any mod referenced here remain under their own
+licences and are not redistributed. Compile-time dependencies are resolved
+from public mavens at build time.
