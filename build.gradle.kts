@@ -1,4 +1,6 @@
 import org.gradle.language.jvm.tasks.ProcessResources
+import org.gradle.api.tasks.testing.Test
+import org.gradle.jvm.tasks.Jar
 
 plugins {
     `java-library`
@@ -34,6 +36,8 @@ base {
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
+val clientTest = sourceSets.create("clientTest")
+
 neoForge {
     version = neo_version
 
@@ -57,6 +61,30 @@ neoForge {
             sourceSet(sourceSets.main.get())
         }
     }
+
+    addModdingDependenciesTo(clientTest)
+}
+
+clientTest.compileClasspath += sourceSets.main.get().output
+clientTest.runtimeClasspath += sourceSets.main.get().output
+
+tasks.register<Jar>("clientTestJar") {
+    group = "verification"
+    description = "Build the test-only mod used by the headless client suite"
+    archiveFileName = "explosiveenhancement-client-tests.jar"
+    destinationDirectory = layout.buildDirectory.dir("test-libs")
+    from(clientTest.output)
+    dependsOn(tasks.named(clientTest.classesTaskName))
+}
+
+dependencies {
+    testImplementation(platform("org.junit:junit-bom:6.1.2"))
+    testImplementation("org.junit.jupiter:junit-jupiter")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+}
+
+tasks.named<Test>("test") {
+    useJUnitPlatform()
 }
 
 val generateModMetadata = tasks.register<ProcessResources>("generateModMetadata") {

@@ -15,6 +15,12 @@ An independent NeoForge port of **[Explosive Enhancement](https://github.com/Sup
 ## Building
 `gradle build` — the built JAR is written to `build/libs/`.
 
+## Tests
+
+`gradle test` covers explosion sizing, placement, visibility, and particle-count policy.
+`gradle clientTestJar` builds a test-only mod that verifies the packet-handler mixin in a
+headless client; it is excluded from releases.
+
 ## License
 
 Released under the MIT License — see [LICENSE](LICENSE).

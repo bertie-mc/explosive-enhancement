@@ -1,0 +1,16 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "MIT"
+
+[[mods]]
+modId = "explosiveenhancementtest"
+version = "1"
+displayName = "Explosive Enhancement client tests"
+description = "Test-only assertions for Explosive Enhancement"
+
+[[dependencies.explosiveenhancementtest]]
+modId = "explosiveenhancement"
+type = "required"
+versionRange = "[1,)"
+ordering = "AFTER"
+side = "CLIENT"
