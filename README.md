@@ -1,3 +1,5 @@
+> **Development has moved:** See [the `explosive-enhancement` module in the Bertie monorepo](https://github.com/bertie-mc/bertie/tree/main/mods/explosive-enhancement). This repository is retained read-only for historical tags, releases, and issues.
+
 # Explosive Enhancement (NeoForge)
 A NeoForge 1.21.1 reimplementation of the **Explosive Enhancement** explosion-particle overhaul.
 
